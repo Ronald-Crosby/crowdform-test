@@ -325,6 +325,52 @@ input[type=button] {
   zoom: 1;
 }
 
+@font-face {
+  font-family: "Maison Neue";
+  src: url("/Maison Neue Book.7b694ec8.woff2") format("woff2"), url("/Maison Neue Book.e53e97b5.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Maison Neue";
+  src: url("/Maison Neue Medium.623ca9df.woff2") format("woff2"), url("/Maison Neue Medium.fc9a20b3.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Maison Neue";
+  src: url("/Maison Neue Bold.dd8451ff.woff2") format("woff2"), url("/Maison Neue Bold.8e8b377d.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Orpheus Pro";
+  src: url("/Orpheus Pro Bold.c1f52af8.woff2") format("woff2"), url("/Orpheus Pro Bold.d0adae47.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "SweetSansPro";
+  src: url("/SweetSansPro-Bold.555c1933.woff2") format("woff2"), url("/SweetSansPro-Bold.8a54d30e.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+}
+body {
+  font-family: "Maison Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 2rem;
+}
+
 body {
   background: antiquewhite;
 }

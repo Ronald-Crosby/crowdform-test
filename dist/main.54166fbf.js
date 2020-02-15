@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../fonts/Maison Neue Book.woff2":[["Maison Neue Book.7b694ec8.woff2","fonts/Maison Neue Book.woff2"],"fonts/Maison Neue Book.woff2"],"./../fonts/Maison Neue Book.woff":[["Maison Neue Book.e53e97b5.woff","fonts/Maison Neue Book.woff"],"fonts/Maison Neue Book.woff"],"./../fonts/Maison Neue Medium.woff2":[["Maison Neue Medium.623ca9df.woff2","fonts/Maison Neue Medium.woff2"],"fonts/Maison Neue Medium.woff2"],"./../fonts/Maison Neue Medium.woff":[["Maison Neue Medium.fc9a20b3.woff","fonts/Maison Neue Medium.woff"],"fonts/Maison Neue Medium.woff"],"./../fonts/Maison Neue Bold.woff2":[["Maison Neue Bold.dd8451ff.woff2","fonts/Maison Neue Bold.woff2"],"fonts/Maison Neue Bold.woff2"],"./../fonts/Maison Neue Bold.woff":[["Maison Neue Bold.8e8b377d.woff","fonts/Maison Neue Bold.woff"],"fonts/Maison Neue Bold.woff"],"./../fonts/Orpheus Pro Bold.woff2":[["Orpheus Pro Bold.c1f52af8.woff2","fonts/Orpheus Pro Bold.woff2"],"fonts/Orpheus Pro Bold.woff2"],"./../fonts/Orpheus Pro Bold.woff":[["Orpheus Pro Bold.d0adae47.woff","fonts/Orpheus Pro Bold.woff"],"fonts/Orpheus Pro Bold.woff"],"./../fonts/SweetSansPro-Bold.woff2":[["SweetSansPro-Bold.555c1933.woff2","fonts/SweetSansPro-Bold.woff2"],"fonts/SweetSansPro-Bold.woff2"],"./../fonts/SweetSansPro-Bold.woff":[["SweetSansPro-Bold.8a54d30e.woff","fonts/SweetSansPro-Bold.woff"],"fonts/SweetSansPro-Bold.woff"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59887" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57909" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

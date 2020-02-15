@@ -1,34 +1,53 @@
 @font-face {
   font-family: 'Maison Neue';
-  src: url('Maison Neue Book.woff2') format('woff2'), url('Maison Neue Book.woff') format('woff');
+  src: url('../fonts/Maison Neue Book.woff2') format('woff2'), url('../fonts/Maison Neue Book.woff') format('woff');
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Maison Neue';
-  src: url('Maison Neue Medium.woff2') format('woff2'), url('Maison Neue Medium.woff') format('woff');
+  src: url('../fonts/Maison Neue Medium.woff2') format('woff2'), url('../fonts/Maison Neue Medium.woff') format('woff');
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'Maison Neue';
-  src: url('Maison Neue Bold.woff2') format('woff2'), url('Maison Neue Bold.woff') format('woff');
+  src: url('../fonts/Maison Neue Bold.woff2') format('woff2'), url('../fonts/Maison Neue Bold.woff') format('woff');
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'Orpheus Pro';
-  src: url('Orpheus Pro Bold.woff2') format('woff2'), url('Orpheus Pro Bold.woff') format('woff');
+  src: url('../fonts/Orpheus Pro Bold.woff2') format('woff2'), url('../fonts/Orpheus Pro Bold.woff') format('woff');
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'SweetSansPro';
-  src: url('SweetSansPro-Bold.woff2') format('woff2'), url('SweetSansPro-Bold.woff') format('woff');
+  src: url('../fonts/SweetSansPro-Bold.woff2') format('woff2'), url('../fonts/SweetSansPro-Bold.woff') format('woff');
   font-style: normal;
   font-weight: 700;
+}
+
+//
+html {
+  font-size: 62.5%;
+}
+
+// at mobile screen sizes, shrink the base font size from 20px to 16px
+@media (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-family-body;
+  font-weight: $font-weight-body;
+  line-height: $line-height-body;
+  font-size: 2rem;
 }
