@@ -33,13 +33,12 @@
   font-weight: 700;
 }
 
-//
 html {
   font-size: 62.5%;
 }
 
 // at mobile screen sizes, shrink the base font size from 20px to 16px
-@media (max-width: 800px) {
+@include breakpoint(xs) {
   html {
     font-size: 50%;
   }
