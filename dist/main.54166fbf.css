@@ -2704,7 +2704,7 @@ html {
   font-size: 62.5%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   html {
     font-size: 50%;
   }
@@ -2742,6 +2742,17 @@ a {
   font-size: 1.1rem;
 }
 
+.btn {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.btn--border {
+  padding: 1em 1.25em;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+
 .pin {
   position: absolute;
   width: 100%;
@@ -2757,10 +2768,41 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  height: 100px;
-  background: #008367;
-  opacity: 0.2;
+  height: 130px;
+  background: transparent;
   z-index: 1;
+  color: white;
+  padding: 0 80px;
+}
+.global-header__container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.global-header__nav {
+  flex: 1 0 auto;
+}
+.global-header__nav ul {
+  display: flex;
+}
+.global-header__nav ul * + * {
+  margin-left: 2em;
+}
+.global-header__logo {
+  min-width: 200px;
+  padding: 0 1em;
+}
+.global-header__logo h1 img {
+  vertical-align: middle;
+}
+.global-header__search {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.global-header__search * + * {
+  margin-left: 2em;
 }
 
 .section-hero {

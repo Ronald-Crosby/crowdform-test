@@ -3,8 +3,49 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 100px;
-  background: $colour-brand--green;
-  opacity: 0.2;
+  height: 130px;
+  background: transparent;
   z-index: 1;
+  color: white;
+  padding: 0 80px;
+
+  &__container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__nav {
+    flex: 1 0 auto;
+
+    ul {
+      display: flex;
+
+      * + * {
+        margin-left: 2em;
+      }
+    }
+  }
+
+  &__logo {
+    min-width: 200px;
+    padding: 0 1em;
+
+    h1 {
+      img {
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &__search {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    * + * {
+      margin-left: 2em;
+    }
+  }
 }
