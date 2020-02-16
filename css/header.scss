@@ -1,0 +1,10 @@
+.global-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: $colour-brand--green;
+  opacity: 0.2;
+  z-index: 1;
+}

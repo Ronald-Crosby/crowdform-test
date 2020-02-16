@@ -2695,7 +2695,7 @@ html {
   font-weight: 700;
 }
 @font-face {
-  font-family: "SweetSansPro";
+  font-family: "Sweet Sans Pro";
   src: url("/SweetSansPro-Bold.555c1933.woff2") format("woff2"), url("/SweetSansPro-Bold.8a54d30e.woff") format("woff");
   font-style: normal;
   font-weight: 700;
@@ -2714,10 +2714,111 @@ body {
   font-weight: 400;
   line-height: 1.4;
   font-size: 2rem;
+  color: #008367;
 }
 
-body {
-  background: antiquewhite;
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.alpha,
+.bravo {
+  font-family: "Orpheus Pro";
+}
+
+.alpha {
+  font-size: 6.8rem;
+  line-height: 1.2;
+}
+
+.charlie {
+  font-family: "Sweet Sans Pro";
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.charlie--xs {
+  font-size: 1.1rem;
+}
+
+.pin {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.global-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: #008367;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.section-hero {
+  width: 100vw;
+  height: 100vh;
+  background: #008367;
+  color: white;
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.hero-image img {
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.hero-content__main {
+  text-align: center;
+  margin: auto 0;
+}
+.hero-content__main h2 {
+  margin-bottom: 0.2em;
+}
+.hero-content__main p {
+  max-width: 30em;
+  margin: 0 auto;
+}
+.hero-content__scroll-cta {
+  display: flex;
+  margin-bottom: 1.25em;
+}
+.hero-content__scroll-cta a {
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  padding: 1em 2em 2em;
+}
+.hero-content__scroll-cta a::after {
+  content: "";
+  width: 1em;
+  height: 1rem;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: translateX(-50%) rotate(-45deg);
+  position: absolute;
+  bottom: 10%;
+  left: 48%;
 }
 
 /*# sourceMappingURL=/main.54166fbf.css.map */

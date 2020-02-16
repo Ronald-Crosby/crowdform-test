@@ -1,9 +1,13 @@
+// core / functions
 @import './reset.scss';
 @import './bootstrap-grid.scss';
 @import './mixins.scss';
+
+// global
 @import './variables.scss';
 @import './typography.scss';
+@import './helpers.scss';
 
-body {
-  background: antiquewhite;
-}
+// sections
+@import './header.scss';
+@import './hero.scss';

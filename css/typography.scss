@@ -27,7 +27,7 @@
 }
 
 @font-face {
-  font-family: 'SweetSansPro';
+  font-family: 'Sweet Sans Pro';
   src: url('../fonts/SweetSansPro-Bold.woff2') format('woff2'), url('../fonts/SweetSansPro-Bold.woff') format('woff');
   font-style: normal;
   font-weight: 700;
@@ -49,4 +49,32 @@ body {
   font-weight: $font-weight-body;
   line-height: $line-height-body;
   font-size: 2rem;
+  color: $colour-brand--green;
+}
+
+// remove anchor blue and underline
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.alpha,
+.bravo {
+  font-family: 'Orpheus Pro';
+}
+
+.alpha {
+  font-size: 6.8rem;
+  line-height: $line-height-headings;
+}
+
+.charlie {
+  font-family: 'Sweet Sans Pro';
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  &--xs {
+    font-size: 1.1rem;
+  }
 }
