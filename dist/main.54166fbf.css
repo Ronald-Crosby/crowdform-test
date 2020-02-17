@@ -2860,4 +2860,17 @@ a {
   left: 48%;
 }
 
+.testimonials {
+  padding: 5rem 0;
+}
+.testimonials__logos {
+  display: flex;
+}
+.testimonials__logos * + * {
+  margin-left: 3rem;
+}
+.testimonials__logos a {
+  display: block;
+}
+
 /*# sourceMappingURL=/main.54166fbf.css.map */

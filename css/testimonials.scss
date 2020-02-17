@@ -1,0 +1,15 @@
+.testimonials {
+  padding: 5rem 0;
+
+  &__logos {
+    display: flex;
+
+    & * + * {
+      margin-left: 3rem;
+    }
+
+    a {
+      display: block;
+    }
+  }
+}
