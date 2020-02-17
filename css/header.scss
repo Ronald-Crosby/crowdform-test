@@ -16,8 +16,6 @@
   }
 
   &__nav {
-    flex: 1 0 auto;
-
     ul {
       display: flex;
 
@@ -30,6 +28,7 @@
   &__logo {
     min-width: 200px;
     padding: 0 1em;
+    margin: 0 auto;
 
     h1 {
       img {
@@ -39,7 +38,6 @@
   }
 
   &__search {
-    flex: 1 0 auto;
     display: flex;
     justify-content: flex-end;
     align-items: center;

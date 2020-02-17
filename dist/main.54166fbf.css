@@ -2779,9 +2779,6 @@ a {
   height: 100%;
   align-items: center;
 }
-.global-header__nav {
-  flex: 1 0 auto;
-}
 .global-header__nav ul {
   display: flex;
 }
@@ -2791,12 +2788,12 @@ a {
 .global-header__logo {
   min-width: 200px;
   padding: 0 1em;
+  margin: 0 auto;
 }
 .global-header__logo h1 img {
   vertical-align: middle;
 }
 .global-header__search {
-  flex: 1 0 auto;
   display: flex;
   justify-content: flex-end;
   align-items: center;
