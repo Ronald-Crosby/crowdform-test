@@ -368,8 +368,18 @@ body {
   font-family: "Maison Neue", Helvetica, sans-serif;
   font-weight: 400;
   line-height: 1.4;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #008367;
+}
+
+.text-body--small {
+  font-size: 1.7rem;
+}
+.text-body--large {
+  font-size: 2rem;
+}
+.text-body--bold {
+  font-weight: 500;
 }
 
 a {
@@ -398,24 +408,37 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  font-size: 1.6rem;
 }
 .charlie--xs {
   font-size: 1.1rem;
+}
+.charlie--lg {
+  font-size: 2rem;
+}
+
+.delta {
+  font-family: "Orpheus Pro";
+  font-weight: 700;
+  font-size: 1.8rem;
 }
 
 .btn {
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1;
+  display: inline-block;
 }
 .btn--border {
   padding: 1em 1.25em;
   border: 1px solid white;
   border-radius: 2px;
 }
-
-.p-small {
-  font-size: 1.6rem;
+.btn--fill {
+  padding: 1.1em 2.5em;
+  background-color: #008367;
+  color: white;
+  border-radius: 2px;
 }
 
 .pin {
@@ -428,6 +451,37 @@ a {
   right: 0;
 }
 
+.font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.image, .img > img {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  object-fit: cover;
+  bottom: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  object-position: 50% 50%;
+  display: block;
+  z-index: 0;
+}
+
+.image-box, .img {
+  position: relative;
+  overflow: hidden;
+}
+
+.img:before {
+  content: "";
+  padding-top: 50%;
+  display: block;
+}
 /*!
  * Bootstrap Grid v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -4756,14 +4810,25 @@ html {
 }
 .testimonials__logos {
   display: flex;
-}
-.testimonials__logos * + * {
-  margin-left: 3rem;
+  justify-content: space-between;
 }
 .testimonials__logos a {
   display: block;
 }
+.testimonials__text {
+  margin: 10rem auto 5rem auto;
+  text-align: center;
+}
+.testimonials__quote {
+  margin-bottom: 3.5rem;
+}
+.testimonials__cite {
+  font-style: normal;
+}
 
+.building__image-wrapper:before {
+  padding-top: 61.0526315789%;
+}
 .building__title-card {
   margin-left: -33.333333333%;
   margin-top: 9rem;
@@ -4772,20 +4837,29 @@ html {
   text-align: center;
   background: white;
   padding: 7.5rem 6.5rem;
-  border: 1px solid black;
 }
-.building .features-grid {
+.building__title-card-inner * + * {
+  margin-top: 2.5rem;
+}
+.building__header {
+  margin-bottom: 15rem;
+}
+.building__grid-title {
+  margin-bottom: 2rem;
+}
+
+.features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-row-gap: 0;
-  grid-column-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-row-gap: 4rem;
+  grid-column-gap: 14rem;
+  margin: 3.5rem 0 15rem 0;
 }
-.building .features-grid__item {
+.features-grid__item {
   display: flex;
   align-items: center;
-  padding: 2rem 4rem 2rem 0;
 }
-.building .features-grid__icon {
+.features-grid__icon {
   width: 7.2rem;
   margin-right: 2rem;
 }

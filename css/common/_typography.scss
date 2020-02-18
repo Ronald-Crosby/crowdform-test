@@ -48,8 +48,22 @@ body {
   font-family: $font-family-body;
   font-weight: $font-weight-body;
   line-height: $line-height-body;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: $colour-brand--green;
+}
+
+.text-body {
+  &--small {
+    font-size: 1.7rem;
+  }
+
+  &--large {
+    font-size: 2rem;
+  }
+
+  &--bold {
+    font-weight: 500;
+  }
 }
 
 // remove anchor blue and underline
@@ -79,24 +93,39 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  font-size: 1.6rem;
 
   &--xs {
     font-size: 1.1rem;
   }
+
+  &--lg {
+    font-size: 2rem;
+  }
+}
+
+.delta {
+  font-family: 'Orpheus Pro';
+  font-weight: 700;
+  font-size: 1.8rem;
 }
 
 .btn {
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1;
+  display: inline-block;
 
   &--border {
     padding: 1em 1.25em;
     border: 1px solid white;
     border-radius: 2px;
   }
-}
 
-.p-small {
-  font-size: 1.6rem;
+  &--fill {
+    padding: 1.1em 2.5em;
+    background-color: $colour-brand--green;
+    color: white;
+    border-radius: 2px;
+  }
 }

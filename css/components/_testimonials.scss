@@ -3,13 +3,23 @@
 
   &__logos {
     display: flex;
-
-    & * + * {
-      margin-left: 3rem;
-    }
+    justify-content: space-between;
 
     a {
       display: block;
     }
+  }
+
+  &__text {
+    margin: 10rem auto 5rem auto;
+    text-align: center;
+  }
+
+  &__quote {
+    margin-bottom: 3.5rem;
+  }
+
+  &__cite {
+    font-style: normal;
   }
 }
