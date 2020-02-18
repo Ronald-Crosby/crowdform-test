@@ -431,14 +431,39 @@ a {
 }
 .btn--border {
   padding: 1em 1.25em;
-  border: 1px solid white;
-  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 1px;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+.btn--border:hover {
+  border-color: white;
+  background: rgba(255, 255, 255, 0.1);
 }
 .btn--fill {
   padding: 1.1em 2.5em;
   background-color: #008367;
   color: white;
+  border: 1px solid #008367;
   border-radius: 2px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.btn--fill:hover {
+  background-color: transparent;
+  color: #008367;
+}
+
+.divider {
+  position: relative;
+  padding-left: 7rem;
+}
+.divider::before {
+  content: "";
+  width: 5rem;
+  height: 1px;
+  background-color: #008367;
+  position: absolute;
+  top: 45%;
+  left: 0;
 }
 
 .pin {
@@ -4709,7 +4734,7 @@ html {
   }
 }
 .global-header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -4826,6 +4851,9 @@ html {
   font-style: normal;
 }
 
+.building__header {
+  margin-bottom: 5rem;
+}
 .building__image-wrapper:before {
   padding-top: 61.0526315789%;
 }
@@ -4841,25 +4869,25 @@ html {
 .building__title-card-inner * + * {
   margin-top: 2.5rem;
 }
-.building__header {
+.building__main {
   margin-bottom: 15rem;
 }
-.building__grid-title {
-  margin-bottom: 2rem;
-}
 
-.features-grid {
+.features__grid-header {
+  margin-bottom: 5rem;
+}
+.features .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-row-gap: 4rem;
   grid-column-gap: 14rem;
-  margin: 3.5rem 0 15rem 0;
+  margin-bottom: 15rem;
 }
-.features-grid__item {
+.features .features-grid__item {
   display: flex;
   align-items: center;
 }
-.features-grid__icon {
+.features .features-grid__icon {
   width: 7.2rem;
   margin-right: 2rem;
 }
