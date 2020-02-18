@@ -2753,6 +2753,10 @@ a {
   border-radius: 2px;
 }
 
+.p-small {
+  font-size: 1.6rem;
+}
+
 .pin {
   position: absolute;
   width: 100%;
@@ -2871,6 +2875,31 @@ a {
 }
 .testimonials__logos a {
   display: block;
+}
+
+.building__title-card {
+  margin-left: -33.333333333%;
+  margin-top: 9rem;
+}
+.building__title-card-inner {
+  text-align: center;
+  background: white;
+  padding: 7.5rem 6.5rem;
+  border: 1px solid black;
+}
+.building .features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-row-gap: 0;
+  grid-column-gap: 3rem;
+}
+.building .features-grid__item {
+  display: flex;
+  align-items: center;
+  padding: 2rem 4rem 2rem 0;
+}
+.building .features-grid__icon {
+  width: 7.2rem;
 }
 
 /*# sourceMappingURL=/main.54166fbf.css.map */

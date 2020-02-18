@@ -1,0 +1,32 @@
+.image {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  object-fit: cover;
+  bottom: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  object-position: 50% 50%;
+  display: block;
+  z-index: 0;
+}
+
+.image-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.img {
+  @extend .image-box;
+  &:before {
+    content: '';
+    padding-top: 50%; // change this number in your own scss file
+    display: block;
+  }
+  & > img {
+    @extend .image;
+  }
+}
