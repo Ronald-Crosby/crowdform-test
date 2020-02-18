@@ -4,9 +4,11 @@
 
 // global
 @import './common/_variables.scss';
-@import './common/_bootstrap-grid.scss';
 @import './common/_typography.scss';
 @import './common/_helpers.scss';
+
+// vendor
+@import './vendor/bootstrap-grid.scss';
 
 // sections
 @import './components/_header.scss';
