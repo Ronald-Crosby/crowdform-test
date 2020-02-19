@@ -4851,6 +4851,21 @@ html {
   font-style: normal;
 }
 
+.building {
+  position: relative;
+  margin-bottom: 12rem;
+  padding-top: 8rem;
+}
+.building::before {
+  content: "";
+  background-color: #fcf4e8;
+  position: absolute;
+  top: 0;
+  left: calc((100vw - 100%) / -2);
+  z-index: -1;
+  width: 100vw;
+  height: 75%;
+}
 .building__header {
   margin-bottom: 5rem;
 }
@@ -4858,8 +4873,7 @@ html {
   padding-top: 61.0526315789%;
 }
 .building__title-card {
-  margin-left: -33.333333333%;
-  margin-top: 9rem;
+  margin-left: -49.999999998%;
 }
 .building__title-card-inner {
   text-align: center;
@@ -4869,10 +4883,13 @@ html {
 .building__title-card-inner * + * {
   margin-top: 2.5rem;
 }
-.building__main {
-  margin-bottom: 15rem;
-}
 
+@media (min-width: 1200px) {
+  .building__title-card {
+    margin-left: -33.333333333%;
+    margin-top: 9rem;
+  }
+}
 .features__grid-header {
   margin-bottom: 5rem;
 }

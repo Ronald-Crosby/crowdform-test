@@ -1,4 +1,19 @@
 .building {
+  position: relative;
+  margin-bottom: 12rem;
+  padding-top: 8rem;
+
+  &::before {
+    content: '';
+    background-color: $colour-brand--cream;
+    position: absolute;
+    top: 0;
+    left: calc((100vw - 100%) / -2);
+    z-index: -1;
+    width: 100vw;
+    height: 75%;
+  }
+
   &__header {
     margin-bottom: 5rem;
   }
@@ -10,8 +25,7 @@
   }
 
   &__title-card {
-    margin-left: -33.333333333%;
-    margin-top: 9rem;
+    margin-left: -49.999999998%;
   }
 
   &__title-card-inner {
@@ -23,8 +37,13 @@
       margin-top: 2.5rem;
     }
   }
+}
 
-  &__main {
-    margin-bottom: 15rem;
+@include breakpoint(xl) {
+  .building {
+    &__title-card {
+      margin-left: -33.333333333%;
+      margin-top: 9rem;
+    }
   }
 }
