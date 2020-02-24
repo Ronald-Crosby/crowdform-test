@@ -116,11 +116,19 @@ a {
   line-height: 1;
   display: inline-block;
 
+  &--nav {
+    transition: color $transition-time $transition-curve;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
   &--border {
     padding: 1em 1.25em;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 1px;
-    transition: border-color 0.2s ease, background-color 0.2s ease;
+    transition: border-color $transition-time $transition-curve, background-color $transition-time $transition-curve;
 
     &:hover {
       border-color: rgba(255, 255, 255, 1);
@@ -134,7 +142,7 @@ a {
     color: white;
     border: 1px solid $colour-brand--green;
     border-radius: 2px;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    transition: background-color $transition-time $transition-curve, color $transition-time $transition-curve;
 
     &:hover {
       background-color: transparent;
