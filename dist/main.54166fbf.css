@@ -472,6 +472,10 @@ a {
   left: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .pin {
   position: absolute;
   width: 100%;
