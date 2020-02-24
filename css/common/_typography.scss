@@ -2,35 +2,35 @@
   font-family: 'Maison Neue';
   src: url('../fonts/Maison Neue Book.woff2') format('woff2'), url('../fonts/Maison Neue Book.woff') format('woff');
   font-style: normal;
-  font-weight: 400;
+  font-weight: $font-weight-body;
 }
 
 @font-face {
   font-family: 'Maison Neue';
   src: url('../fonts/Maison Neue Medium.woff2') format('woff2'), url('../fonts/Maison Neue Medium.woff') format('woff');
   font-style: normal;
-  font-weight: 500;
+  font-weight: $font-weight-medium;
 }
 
 @font-face {
   font-family: 'Maison Neue';
   src: url('../fonts/Maison Neue Bold.woff2') format('woff2'), url('../fonts/Maison Neue Bold.woff') format('woff');
   font-style: normal;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
 }
 
 @font-face {
   font-family: 'Orpheus Pro';
   src: url('../fonts/Orpheus Pro Bold.woff2') format('woff2'), url('../fonts/Orpheus Pro Bold.woff') format('woff');
   font-style: normal;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
 }
 
 @font-face {
   font-family: 'Sweet Sans Pro';
   src: url('../fonts/SweetSansPro-Bold.woff2') format('woff2'), url('../fonts/SweetSansPro-Bold.woff') format('woff');
   font-style: normal;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
 }
 
 html {
@@ -74,7 +74,7 @@ a {
 
 .alpha,
 .bravo {
-  font-family: 'Orpheus Pro';
+  font-family: $font-family-headings;
 }
 
 .alpha {
@@ -89,8 +89,8 @@ a {
 }
 
 .charlie {
-  font-family: 'Sweet Sans Pro';
-  font-weight: 700;
+  font-family: $font-family-subheadings;
+  font-weight: $font-weight-bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 1.6rem;
@@ -105,8 +105,8 @@ a {
 }
 
 .delta {
-  font-family: 'Orpheus Pro';
-  font-weight: 700;
+  font-family: $font-family-headings;
+  font-weight: $font-weight-bold;
   font-size: 1.8rem;
 }
 
